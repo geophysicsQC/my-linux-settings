@@ -1,0 +1,44 @@
+# Add Bin Path for ASU CSE 511
+export PATH="/Users/cqi/repo/asu/cse-511/spark-2.2.0-bin-hadoop2.7/bin:$PATH"
+export PATH="/Users/cqi/repo/asu/cse-511/sbt/bin:$PATH"
+# This scala has some errors in starting up
+# export PATH="/Users/cqi/repo/asu/cse-511/scala-2.11.11/bin:$PATH"
+
+# Add Visual Studio Code (code)
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+
+# For CMake
+export PATH="/Applications/CMake.app/Contents/bin:$PATH"
+
+# For MacPorts
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
+# For Home Brew
+export PATH="/usr/local/bin:$PATH"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/cqi/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/cqi/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/cqi/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/cqi/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# For python path of library
+export PYTHONPATH=~/repo/python_lib
+
+export PATH="/usr/local/opt/bison/bin:$PATH"
+
+export CC=gcc-10
+export OPENMPLIB="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10"
+
+# some custom ssh command
+alias ssh="ssh -Y -C"
+
